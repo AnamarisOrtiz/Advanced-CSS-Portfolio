@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    padding: 8px;
+    font-size: 14px;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: url('path/to/your/image.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: rgb(138, 134, 134);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+header h1 {
+    margin: 0 ;
+    font-size: 36px;
+    background-color: rgba(62, 60, 60, 0.6);
+    display: inline-block;
+    padding: 10px 60px;
+}
+
+header img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav {
+    margin: auto 5% auto auto;
+    color: #fff;
+    text-align: right;
+    font-size: 26px;
+    float: right;
+    color: #fff;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    border-bottom: 4px solid;
+    padding: 0 12px;
+    margin: 0 4px;
+}
+
+nav a:hover {
+    color: #ddd;
+    border-bottom: 4px solid #ddd;
+}
+
+
+main {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+main img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: 0px;
+}
+
+.image-conatiner {
+    position: relative;
+   
+}
+
+.overlay-text {
+    font-size: 24px;
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 6px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    background: #e2e2e2;
+    flex: 1;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+   
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.inline-item {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 120px 20px 0px;
+}
+
+.inline-item h3  {
+    border-right: 3px solid #333;
+    padding: 0 20px 0 152px;
+    margin-right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    text-align: right;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.work-box {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border: 3px solid #333;
+    position: relative;
+    margin: 10px 0;
+}
+
+.work-box:hover {
+    background-color: #fff;
+    border-color: #ddd;
+}
+.work-box:nth-child(2),.work-box:nth-child(4) {
+    margin-left: auto;
+}
+.work-box-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.work-box-overlay:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+.work-box .caption-text {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+    background-color:rgb(138, 134, 134);
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.work-box-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.work-box-stack .work-box {
+    width: 48%;
+    height: 200px;
+}
+.caption-text-sub-header {
+    font-size: 12px;
+}
+.caption-text {
+    text-decoration: none;
+}
+.caption-text:hover {
+   cursor: pointer;
+}
+
+.work-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inline-item ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto auto auto 2%;
+    width: 100%;
+}
+.inline-item ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.inline-item ul li  {
+    display: block;
+    margin: 0 auto;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+}
+.inline-item ul li:hover {
+    display: block;
+    border-bottom: 3px solid #ddd;
+    color: #ddd;
+    cursor: pointer;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1, header p {
+        font-size: 1.5em;
+        padding: 5px 10px;
+    }
+
+    nav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+}
