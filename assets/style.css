@@ -92,13 +92,13 @@ main img {
 .overlay-text {
     font-size: 24px;
     position: absolute;
-    top: 60%; /* Adjust as needed */
-    left: 80%; /* Adjust as needed */
-    color: white; /* Adjust as needed */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: to make the text stand out */
-    margin: 6px; /* Adjust as needed */
-    padding: 6px; /* Adjust as needed */
-    border-radius: 5px; /* Optional */
+    bottom: 10%;
+    right: 2%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 6px;
+    padding: 6px;
+    border-radius: 5px;
 }
 
 .products {
@@ -121,7 +121,6 @@ section img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
 }
 
 .inline-item {
@@ -149,10 +148,24 @@ section img {
     position: relative;
     margin: 10px 0;
 }
+
+.work-box:hover {
+    background-color: #fff;
+    border-color: #ddd;
+}
 .work-box:nth-child(2),.work-box:nth-child(4) {
     margin-left: auto;
 }
-
+.work-box-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.work-box-overlay:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
 .work-box .caption-text {
     position: absolute;
     bottom: 20px;
@@ -175,6 +188,12 @@ section img {
 .caption-text-sub-header {
     font-size: 12px;
 }
+.caption-text {
+    text-decoration: none;
+}
+.caption-text:hover {
+   cursor: pointer;
+}
 
 .work-boxes {
     display: flex;
@@ -187,6 +206,10 @@ section img {
     flex-direction: row;
     margin: auto auto auto 2%;
     width: 100%;
+}
+.inline-item ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
 }
 .inline-item ul li  {
     display: block;
